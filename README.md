@@ -61,6 +61,11 @@ See interactive API docs at `/docs`.
 - See all uploaded images with thumbnails, filename, upload time
 - React.js with Axios, styled for usability
 
+## AI Object Detection
+
+Each uploaded image is automatically analyzed with a Hugging Face DETR object detection model.  
+Detected objects are listed in the dashboard for quick compliance review.
+
 ---
 ## Authors
 

@@ -8,7 +8,7 @@ function ImageDashboard() {
 
   const fetchFiles = async () => {
     const res = await axios.get(`${API_URL}/files`);
-    setFiles(res.data.reverse()); // Show newest first
+    setFiles(res.data.reverse());
   };
 
   useEffect(() => {
@@ -28,6 +28,12 @@ function ImageDashboard() {
             />
             <div><b>{file.filename}</b></div>
             <div>{new Date(file.upload_time).toLocaleString()}</div>
+            <div>
+              <b>Detections:</b>{" "}
+              {file.detections && file.detections.length
+                ? file.detections.join(", ")
+                : "None"}
+            </div>
           </div>
         ))}
       </div>
