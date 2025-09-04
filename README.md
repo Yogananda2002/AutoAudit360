@@ -47,6 +47,20 @@ AutoAudit360 is an intelligent platform that automates compliance checks from im
 3. `npm install`
 4. `npm start`
 
+## Backend API Endpoints
+
+- `POST /upload`: Upload an image file. Returns filename and status.
+- `GET /files`: List all uploaded files with metadata.
+- `GET /uploads/{filename}`: Download a specific file.
+
+See interactive API docs at `/docs`.
+
+## Frontend MVP Features
+
+- Upload images to the backend
+- See all uploaded images with thumbnails, filename, upload time
+- React.js with Axios, styled for usability
+
 ---
 ## Authors
 
